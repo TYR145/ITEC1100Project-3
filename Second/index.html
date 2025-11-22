@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
-        <link rel="stylesheet" href="style.css">
-    </html>
-  <!-- Set the page title -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Harvest Season</title>
 
-  <!-- Set the charset we're using to UTF-8 -->
-  <meta charset="utf-8" />
-
-  <!-- Set the screens default zoom / scale to 1 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Specifies the document mode for Internet Explorer -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <!-- Set the CSS Reset File -->
-  <link rel="stylesheet" href="./reset.css" />
-
-  <!-- Load JavaScript correctly -->
-  <script src="./JavaScript.js" defer></script>
+  <!-- CSS files -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Your page content goes here -->
-  <h2>Harvest Season!</h2>
+  <!-- Hero section -->
+  <main>
+    <section class="hero">
+      <div class="hero-stuff">
+        <h1>ITEC 1100 - Project 3</h1>
+        <img src="images/petgroup3.0.jpg" alt="Harvest Season Logo">
+        <div class="hero-message">
+          <p><strong><u>Credits</u></strong></p>
+          <ul>
+            <li>Janna Ruest</li>
+            <li>Tessa Roberts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <p><strong>To Do (Add):</strong></p>
-  <ul>
-    <li>Demo video + SCREEN SHOTS</li>
-    <li>Team Credits (in like a footer or something)</li>
-    <li>(T can draft designs & J can implement it (CSS) ==> work on improvements together)</li>
-    <li>We work on JS together (in person)</li>
-  </ul>
-<br>
+  <!-- Page content -->
+  <div class="top">
+    <h2>Harvest Season!</h2>
+    <p>
+      It's harvest season on the apple farm, and you need to collect enough fruit before winter.<br>
+      <em>Catch enough fruit before the timer runs out!</em>
+    </p>
 
-<h2>About</h2>
-<p>You're on a farm, it's harvest season and you need to make sure you have all the fruit for the winter! 
-  <br>
-  <br>
-  <strong>Goal:</strong> Catch 10 ripe Apples in the basket & avoid the rotten fruit! Or else you'll be hungry for the winter!
-  <br>
-  <br>
-</p>
-  <p><strong>RULES</strong></p>
-  <ul>
-    <li>Use either A & D keys, or Left & Right Arrow keys to move</li>
-    <br>
-    <li>Catch ripe fruit: +1 </li>
-    <li>Avoid rotten fruit: -2 </li>
-    <br>
-    <li>Goal: 10 points</li>
-  </ul>
-<br>
-<p>(ADD VIDEO HERE)</p>
+    <p id="Demo-video"><u>(ADD DEMO VIDEO HERE)</u></p>
+
+    <!-- Button to game page -->
+    <button onclick="window.location.href='game.html'">Play the Game</button>
+
+    <p>
+      You're on a farm, it's harvest season and you need to make sure you have all the fruit for the winter!<br><br>
+      <strong>Goal:</strong> Catch 10 ripe Apples in the basket & avoid the rotten fruit! Or else you'll be hungry for the winter!
+    </p>
+
+    <p><strong>RULES</strong></p>
+    <ul>
+      <li>Use either A & D keys, or Left & Right Arrow keys to move</li>
+      <li>Catch ripe fruit: +1</li>
+      <li>Avoid rotten fruit: -2</li>
+      <li>Goal: 10 points</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>&copy; 2025 HarvestSeason. All rights reserved.</strong></p>
+  </footer>
 </body>
-
-<footer>
-  <p>Team: Tessa Roberts, Janna Ruest</p>
-  <insert copy right here>>
-</footer>
-
 </html>
