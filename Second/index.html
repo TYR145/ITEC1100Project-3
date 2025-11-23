@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-ca">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,51 +15,50 @@
 <body>
   <!-- Hero section -->
   <main>
-    <section class="hero">
-      <div class="hero-stuff">
-        <h1>ITEC 1100 - Project 3</h1>
-        <img src="images/petgroup3.0.jpg" alt="Harvest Season Logo">
-        <div class="hero-message">
-          <p><strong><u>Credits</u></strong></p>
-          <ul>
-            <li>Janna Ruest</li>
-            <li>Tessa Roberts</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="credits-main">
+      <h1>ITEC 1100 - Project 3</h1>
+      <img src="images/petgroup3.0.jpg" alt="Harvest Season Logo">
+      <p><u>Credits</u></p>
+      <ul>
+        <li>Janna Ruest</li>
+        <li>Tessa Roberts</li>
+      </ul>
+    </div>
   </main>
-
-  <!-- Page content -->
-  <div class="top">
-    <h2>Harvest Season!</h2>
+  <br>
+  <br>
+  <!-- Visual Page content -->
+  <section class="intro-page">
+    <h2>Title: Harvest Season</h2> <!--Temporarily for clarification-->
     <p>
-      It's harvest season on the apple farm, and you need to collect enough fruit before winter.<br>
-      <em>Catch enough fruit before the timer runs out!</em>
+      It's harvest season on the apple farm, and you need to make sure you have all the fruit for the winter!
+      <br>
+      Catch at least 20 ripe Apples in the basket & avoid the rotten fruit! Or else you'll be hungry for
+      the winter!
+      <!--changed 10 apples to 20, to hopefully better exist with the timer [I found a YT tutorial]-->
     </p>
 
-    <p id="Demo-video"><u>(ADD DEMO VIDEO HERE)</u></p>
-
-    <!-- Button to game page -->
-    <button onclick="window.location.href='game.html'">Play the Game</button>
-
-    <p>
-      You're on a farm, it's harvest season and you need to make sure you have all the fruit for the winter!<br><br>
-      <strong>Goal:</strong> Catch 10 ripe Apples in the basket & avoid the rotten fruit! Or else you'll be hungry for the winter!
+    <p id="Demo-video">
+      <u>(ADD DEMO VIDEO HERE)</u>
     </p>
 
     <p><strong>RULES</strong></p>
     <ul>
-      <li>Use either A & D keys, or Left & Right Arrow keys to move</li>
-      <li>Catch ripe fruit: +1</li>
-      <li>Avoid rotten fruit: -2</li>
-      <li>Goal: 10 points</li>
+      <li>Move Left & Right with: A & D keys, or ← & → keys </li>
+      <li>Catching ripe fruit: <strong>+1</strong></li>
+      <li>Avoid rotten fruit: <strong>-2</strong></li>
+      <li><strong>Goal: atleast 20 apples</strong></li>
     </ul>
-  </div>
+
+    <!-- Button to game HTML page -->
+    <button onclick="window.location.href='game.html'">Play Game Here!</button>
+  </section>
+<br>
 
   <!-- Footer -->
   <footer>
     <p><strong>&copy; 2025 HarvestSeason. All rights reserved.</strong></p>
   </footer>
 </body>
+
 </html>
