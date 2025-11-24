@@ -39,3 +39,17 @@ body {
 body {
   background-color: lightyellow;
 }
+
+button {
+  padding: 12px 24px;
+  background: #654321;
+  border: none;
+  border-radius: 8px;
+  color: rgb(232, 135, 0);
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
