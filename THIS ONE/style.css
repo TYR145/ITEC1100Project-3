@@ -32,16 +32,30 @@ body {
   background-color: lightyellow;
 }
 
-.ControlsPoints h2{
+
+.rules1,
+.rules2 {
+  margin-top: 0.5;
+  padding: 0.5rem 0.5rem;
+}
+#Points,
+#Points ul {
+  margin-top: 0.5rem;
+  color: rgb(55, 215, 14);
+  margin-bottom: 0rem;
+}
+
+
+.RulesControlsPoints h2{
   font-size: medium;
   margin-top: 2rem;
   margin-bottom: 0.35rem;
 }
-.ControlsPoints p {
+.RulesControlsPoints p {
   margin-top: 0rem;
   margin-bottom: 2rem;
 }
-.ControlsPoints ul {
+.RulesControlsPoints ul {
   margin: 0%;
 }
 .VideoDemo h2 {
