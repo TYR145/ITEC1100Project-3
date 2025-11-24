@@ -15,11 +15,10 @@ body {
   color: #654321;
   margin: 0;
   padding: 0;
+  text-align: center;
+  background-color: lightyellow;
 }
 
-body {
-  text-align: center;
-}
 ul {
   list-style-position: inside;
   text-align: center;
@@ -42,9 +41,7 @@ ul {
   margin-inline-start: 30rem;
 }
 
-body {
-  background-color: lightyellow;
-}
+
 
 
 .rules1,
