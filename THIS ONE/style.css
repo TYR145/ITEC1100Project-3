@@ -3,10 +3,26 @@ html, body {
   font-size: small;
 }
 
+.top-bar {
+  width: 100%;
+  background-color: rgb(232, 135, 0);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
 .title {
   font-family: Century;
   font-weight: 700;
   font-size: 50px;
   color: rgb(232, 135, 0);
   margin-inline-start: 30rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(232, 135, 0);
+  color: white;
+  padding: 15px;
+  text-align: center;
 }
