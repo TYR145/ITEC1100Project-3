@@ -1,79 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ITEC 1100: Harvest Season</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ITEC 1100: Harvest Season</title>
 
-    <!-- CSS file -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- JavaScript file -->
-    <script src="JavaScript.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="JavaScript.js" defer></script>
 </head>
 
-
 <body>
-    <main>
-        <h1 class="title"> Harvest Season!</h1>
-        <img src="images/..." alt="Insert promotional image">
-        <p class="Credits">
-            <u>Credits:</u>
-        <ul>
-            <li>Tessa Roberts</li>
-            <li>Janna Ruest</li>
-        </ul>
-        </p>
-    </main>
-    <br>
-    <section class="Intro-page">
-        <p class="Description">
-            It's harvest season on the apple farm, and you need to make sure you have all the fruit for the winter!
-        </p>
-        <p class="GOAL-Description">
-            Catch at least 20 ripe Apples in the basket & avoid the rotten ones, as well as other fruit! Or else you'll
-            be hungry for the
-            winter!
-        </p>
+  <main class="hero">
+    <h1 class="title">Harvest Season!</h1>
+    <img src="images/..." alt="Cartoon apple farm promotional image">
 
-        <p class="Controls">
-            <strong>CONTROLS:</strong>
-        <p>Move using <strong>"A" and "D"</strong> keys, or <strong>⬅ & ➡</strong> keys</p>
-
-        </div>
-        </ul>
-        <br>
-        <div class="Points">
-            <strong>POINTS:</strong>
-            <li>Apples: <strong>+1</strong></li>
-            <li>Rotten Apples: <strong>-2</strong></li>
-            <li>Non-Apple fruit: <strong>-3</strong></li>
-        </div>
-        </ul>
-        </p>
-
-
+    <section class="Credits">
+      <h2>Credits</h2>
+      <ul>
+        <li>Tessa Roberts</li>
+        <li>Janna Ruest</li>
+      </ul>
     </section>
-    <br>
-    <p id="Demo-video">
-        <u>(ADD DEMO VIDEO HERE)</u>
+  </main>
+
+  <section class="IntroPage">
+    <p class="Description">
+      It's harvest season on the apple farm, and you need to make sure you have enough fruit for the winter!
     </p>
-    <br>
-    <br>
-    <br>
+    <p class="GoalDescription">
+      Catch at least 20 ripe Apples in the basket or else you'll be hungry for the winter!
+      (Avoid any rotten apples as well as other fruits that may fall! Too bad for the inconsiderate neighbours, you're an apple farm not a grocery store.)
+    </p>
+  </section>
 
-    <section class="PlayGameButton">
-        <!-- Button to game HTML page -->
-        <button onclick="window.location.href='game.html'">Play Game Here!</button>
+  <section class="ControlsPoints">
+    <section id="Controls">
+      <h2>CONTROLS:</h2>
+      <p>Move using <strong>"A" and "D"</strong> keys, or <strong>⬅ & ➡</strong> keys</p>
     </section>
-    <br>
 
+    <section id="Points">
+      <h2>POINTS:</h2>
+      <ul>
+        <li>Apples: <strong>+1</strong></li>
+        <li>Rotten Apples: <strong>-2</strong></li>
+        <li>Non-Apple fruit: <strong>-3</strong></li>
+      </ul>
+    </section>
+  </section>
 
-    <footer class="footer-CopyRight">
-        <p>&copy; 2025 HarvestSeason. All rights reserved.</p>
-    </footer>
+  <section class="VideoDemo">
+    <h2>Demo Video</h2>
+    <p id="DemoVid">(ADD DEMO VIDEO HERE)</p>
+  </section>
+
+  <section class="PlayGameButton">
+    <button onclick="window.location.href='game.html'">Play Game Here!</button>
+  </section>
+
+  <footer class="FooterCopyright">
+    <p>&copy; 2025 HarvestSeason. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>

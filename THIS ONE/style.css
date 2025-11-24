@@ -10,3 +10,26 @@ html, body {
   color: rgb(232, 135, 0);
   margin-inline-start: 30rem;
 }
+
+/*Testing for targetting Controls*/
+#Controls {
+  color: rgb(48, 194, 145);
+}
+
+/*Testing for targetting Points*/
+#Points {
+  color: blue;
+
+}
+
+/*Changing  the size of H2, used H2 for sequentiality of headings*/
+.CONTROLS-POINTS h2 {
+  font-size: small;
+  margin-bottom: 0.25rem;
+}
+.CONTROLS-POINTS p {
+  margin-top: 0rem;
+}
+.CONTROLS-POINTS ul {
+  margin-top: 0rem;
+}
