@@ -35,8 +35,8 @@
     //UNIQUE POSITION VARIABLES: adjust position on Canvas
     //-----------------------------------------------------
     var basket; //change to "basket" later
-    var x1 = 90;
-    var y1 = 295;
+    var x1 = 30;
+    var y1 = 500;
 
 
 // NEW FUNCTION: The Gatekeeper Logic --> has images load
@@ -58,7 +58,7 @@
 
       basket = new Image();
       basket.onload = imageLoaded; //calls draw function ONLY when loaded
-      basket.src = "Images/basket.png";
+      basket.src = "Images/basket.jpeg";
     }
 
     // ----------------------------------------------------------------
@@ -68,7 +68,7 @@
       //drawImage (image, draw x, draw y, drawWidth, dawHeight etc.)
       ctx.clearRect(0,0,canvas.width,canvas.height); //LEAVES NO TRAIL BEHIND
 
-      ctx.drawImage(basket, x1, y1, 200, 300); //adjusts image W & H
+      ctx.drawImage(basket, x1, y1, 150, 90); //adjusts image W & H
     }
 
 // ---------------------------------
@@ -85,8 +85,8 @@
       }
       function moveRight() 
       {
-        x1+= basket; //allows us to move Right
-        basket.src = "Images/basket.png";
+        x1+= basket_speed; //allows us to move Right
+        basket.src = "Images/basket.jpeg";
         Draw () //call draw function to update the canvas
       }
     }
@@ -99,7 +99,7 @@
       }
       function moveLeft() 
       {
-        x1-= basket; //allows us to move Left (-1 to move opposite direction)
+        x1-= basket_speed; //allows us to move Left (-1 to move opposite direction)
         basket.src = "Images/basket.jpeg";
         Draw () //call draw function again
       }
