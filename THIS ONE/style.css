@@ -23,6 +23,7 @@ ul {
   list-style-position: inside;
   text-align: center;
   padding-left: 0;
+  margin-top: 0rem;
 }
 /*HTML updated, no long have class="top-bar"*/
 .top-bar {
@@ -71,22 +72,28 @@ ul {
 }
 
 
-.RulesControlsPoints h2{
-  font-size: medium;
-  margin-top: 2rem;
+.RulesControlsPoints h2, h3{
+  font-size: large;
+  margin-top: 3rem;
   margin-bottom: 0.35rem;
+  text-decoration: underline
 }
 .RulesControlsPoints p {
   margin-top: 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .RulesControlsPoints ul {
-  margin: 0%;
+  margin: 0rem;
 }
+#Controls p {
+  margin-top: 0rem;
+}
+
 .VideoDemo h2 {
   font-size: larger;
   margin-top: 4rem;
   color: rgb(217, 40, 40); /*TEMPORARY COLOUR*/
+  text-decoration: underline;
 
 }
 
