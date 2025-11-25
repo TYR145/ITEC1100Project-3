@@ -34,7 +34,6 @@ ul {
   margin-top: 0rem;
 }
 
-
 .title {
   font-family: Century;
   font-weight: 700;
@@ -42,6 +41,11 @@ ul {
   color: rgb(232, 135, 0);
   margin-inline-start: 30rem;
 }
+
+
+/*
+Decorative Apples 
+*/
 
 .apple-decor1, .apple-decor2 {
     position: fixed;
@@ -60,11 +64,10 @@ ul {
     transform: scaleX(-1);
 }
 
-.rules1,
-.rules2 {
-  margin-top: 0.5;
-  padding: 0.5rem 0.5rem;
-}
+
+/*
+POINTS
+*/
 #Points,
 #Points ul {
   margin-top: 0.5rem;
@@ -72,12 +75,19 @@ ul {
   margin-bottom: 0rem;
 }
 
+/*
+RULES
+*/
+#Rules 
+{
+  background-color: aqua;
+}
 
 .RulesControlsPoints h2, h3{
   font-size: large;
   margin-top: 3rem;
   margin-bottom: 0.35rem;
-  text-decoration: underline
+  text-decoration: underline; 
 }
 .RulesControlsPoints p {
   margin-top: 0rem;
