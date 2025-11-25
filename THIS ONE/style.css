@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
   font-family: Verdana;
   font-size: medium;
 }
@@ -19,7 +19,7 @@ body {
   background-color: lightyellow;
 }
 
-.hero{
+.hero {
   display: fixed;
   flex-direction: column;
   align-items: center;
@@ -47,21 +47,23 @@ ul {
 Decorative Apples 
 */
 
-.apple-decor1, .apple-decor2 {
-    position: absolute;
-    width: 200px;
-    opacity: 0.9;
-    pointer-events: none; 
+.apple-decor1,
+.apple-decor2 {
+  position: absolute;
+  width: 200px;
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .apple-decor1 {
-    top: 335px;
-    left: 10px;
+  top: 335px;
+  left: 10px;
 }
+
 .apple-decor2 {
-    top: 335px;
-    right: 10px;
-    transform: scaleX(-1);
+  top: 335px;
+  right: 10px;
+  transform: scaleX(-1);
 }
 
 
@@ -78,38 +80,40 @@ POINTS
 /*
 RULES
 */
-#Rules 
-{
+#Rules {
   background-color: aqua;
 }
 
-.RulesControlsPoints h2, h3{
+.RulesControlsPoints h2,
+h3 {
   font-size: large;
   margin-top: 3rem;
   margin-bottom: 0.35rem;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
+
 .RulesControlsPoints p {
   margin-top: 0rem;
   margin-bottom: 1rem;
 }
+
 .RulesControlsPoints ul {
   margin: 0rem;
 }
+
 #Controls p {
   margin-top: 0rem;
 }
 
-.VideoDemo h2 {
+.VideoDemo h2 
+{
   font-size: larger;
   margin-top: 4rem;
-<<<<<<< HEAD
-  color: rgb(217, 40, 40); /*TEMPORARY COLOUR*/
+  color: rgb(217, 40, 40);
+  /*TEMPORARY COLOUR*/
   text-decoration: underline;
-=======
-  color: rgb(217, 40, 40); /*temp color*/
->>>>>>> cfb577b2159f42dcda45f1d137e5964925429937
-
+  color: rgb(217, 40, 40);
+  /*temp color*/
 }
 
 
@@ -124,13 +128,14 @@ button {
   font-size: 16px;
   transition: transform 0.2s ease;
 }
+
 button:hover {
   transform: scale(1.06);
 }
 
 
 .FooterCopyright {
- margin-top: 1.5rem;
+  margin-top: 1.5rem;
   width: 100%;
   background-color: rgb(232, 135, 0);
   color: white;
