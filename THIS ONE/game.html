@@ -28,13 +28,13 @@
 
     var totalImages = 1; //counts images present
     var loadedImages = 0; //tracks # of events so far
-    const girl_speed = 15; //using const for movement speed bc unchanging
+    const basket_speed = 15; //using const for movement speed bc unchanging
       //CONST SETS SPEED --> change to match falling apples
 
     //-----------------------------------------------------
     //UNIQUE POSITION VARIABLES: adjust position on Canvas
     //-----------------------------------------------------
-    var girl; //change to "basket" later
+    var basket; //change to "basket" later
     var x1 = 90;
     var y1 = 295;
 
@@ -56,9 +56,9 @@
       canvas = document.getElementById("myCanvas") //ID we set at the start in <canvas> tag
       ctx = canvas.getContext("2d");
 
-      girl = new Image();
-      girl.onload = imageLoaded; //calls draw function ONLY when loaded
-      girl.src = "Images/basket.png";
+      basket = new Image();
+      basket.onload = imageLoaded; //calls draw function ONLY when loaded
+      basket.src = "Images/basket.png";
     }
 
     // ----------------------------------------------------------------
@@ -68,7 +68,7 @@
       //drawImage (image, draw x, draw y, drawWidth, dawHeight etc.)
       ctx.clearRect(0,0,canvas.width,canvas.height); //LEAVES NO TRAIL BEHIND
 
-      ctx.drawImage(girl, x1, y1, 200, 300); //adjusts image W & H
+      ctx.drawImage(basket, x1, y1, 200, 300); //adjusts image W & H
     }
 
 // ---------------------------------
@@ -85,8 +85,8 @@
       }
       function moveRight() 
       {
-        x1+= girl_speed; //allows us to move Right
-        girl.src = "Images/basket.png";
+        x1+= basket; //allows us to move Right
+        basket.src = "Images/basket.png";
         Draw () //call draw function to update the canvas
       }
     }
@@ -99,8 +99,8 @@
       }
       function moveLeft() 
       {
-        x1-= girl_speed; //allows us to move Left (-1 to move opposite direction)
-        girl.src = "Images/basket.jpeg";
+        x1-= basket; //allows us to move Left (-1 to move opposite direction)
+        basket.src = "Images/basket.jpeg";
         Draw () //call draw function again
       }
     }
