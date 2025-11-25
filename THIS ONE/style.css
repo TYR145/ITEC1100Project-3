@@ -41,8 +41,23 @@ ul {
   margin-inline-start: 30rem;
 }
 
+.apple-decor1, .apple-decor2 {
+    position: fixed;
+    width: 150px;
+    opacity: 0.9;
+    pointer-events: none; 
+}
 
+.apple-decor1 {
+    top: 250px;
+    left: 20px;
+}
 
+.apple-decor2 {
+    top: 250px;
+    right: 20px;
+    transform: scaleX(-1);
+}
 
 .rules1,
 .rules2 {
