@@ -45,7 +45,7 @@ ul {
 
 .apple-decor1, .apple-decor2 {
     position: absolute;
-    width: 120px;
+    width: 150px;
     opacity: 0.9;
     pointer-events: none; 
 }
