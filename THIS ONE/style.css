@@ -5,9 +5,7 @@ body {
 }
 
 
-/*
-INTRO PAGE FLEX BOX
-*/
+/*INTRO PAGE FLEX BOX*/
 
 .title-section {
   display: flex;
@@ -48,9 +46,7 @@ ul {
 }
 
 
-/*
-Decorative Apples 
-*/
+/*Decorative Apples */
 
 .apple-decor1,
 .apple-decor2 {
@@ -72,9 +68,7 @@ Decorative Apples
 }
 
 
-/*
-POINTS
-*/
+/*POINTS*/
 #Points,
 #Points ul {
   margin-top: 0.5rem;
@@ -82,9 +76,7 @@ POINTS
   margin-bottom: 0rem;
 }
 
-/*
-RULES
-*/
+/*RULES*/
 #Rules {
   display: flex;
   flex-direction: column;
@@ -92,7 +84,7 @@ RULES
   padding-inline: 1rem;
   padding-bottom: 1rem;
   background-color: white;
-  border: 
+  border: 3px solid orange;
   margin-top: 0rem;
   margin-inline: 2rem;
 }

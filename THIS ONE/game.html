@@ -9,102 +9,25 @@
 
   <!-- CSS files -->
   <link rel="stylesheet" href="style.css" />
+  <script src="JavaScript.js"></script>
 </head>
 
 <body onload="Init()">
   <h2><strong>Insert Canvas HTML here:</strong></h2>
 
+  <div class="Details">
+  <div id="Score">Score: 0</div>
+  <div id="High-Score">High-Score: 0</div>
+</div>
+<div class="Game-Container">
+  <div id="Basket"></div>
   <canvas id="myCanvas" width="600" height="600"
     style="border:4px solid cadetblue; background-color: rgb(231, 255, 255);">
   </canvas>
 
   <button type="reset">Reset</button>
+</div>
 
-
-<!--JAVASCRIPT STARTS HERE-->
-  <script>
-    var canvas;
-    var ctx;
-
-    var totalImages = 1; //counts images present
-    var loadedImages = 0; //tracks # of events so far
-    const basket_speed = 15; //using const for movement speed bc unchanging
-      //CONST SETS SPEED --> change to match falling apples
-
-    //-----------------------------------------------------
-    //UNIQUE POSITION VARIABLES: adjust position on Canvas
-    //-----------------------------------------------------
-    var basket; //change to "basket" later
-    var x1 = 30;
-    var y1 = 500;
-
-
-// NEW FUNCTION: The Gatekeeper Logic --> has images load
-    function imageLoaded() {
-        loadedImages++; // Counts the image as finished
-        
-        // When the count equals the total (1 === 1 (images)) the game is ready.
-        if (loadedImages === totalImages) {
-           setInterval (Draw, 30); // START the drawing only now.
-        }
-    }
-
-    //----------------------------------------
-    //INITIALIZING FUNCTIONS: (Called by <body onload="Init()">)
-    //----------------------------------------
-    function Init() {
-      canvas = document.getElementById("myCanvas") //ID we set at the start in <canvas> tag
-      ctx = canvas.getContext("2d");
-
-      basket = new Image();
-      basket.onload = imageLoaded; //calls draw function ONLY when loaded
-      basket.src = "Images/basket.jpeg";
-    }
-
-    // ----------------------------------------------------------------
-    // DRAW FUNCTION (Runs ONCE, guaranteed after BOTH images are ready)
-    // ----------------------------------------------------------------
-    function Draw() {
-      //drawImage (image, draw x, draw y, drawWidth, dawHeight etc.)
-      ctx.clearRect(0,0,canvas.width,canvas.height); //LEAVES NO TRAIL BEHIND
-
-      ctx.drawImage(basket, x1, y1, 150, 90); //adjusts image W & H
-    }
-
-// ---------------------------------
-//Making images move w/ arrow keys!
-// ---------------------------------
-    window.addEventListener('keydown', detectRight) //only applies for 1 action
-    window.addEventListener('keydown', detectLeft)
-
-    function detectRight(event) 
-    {
-      if (event.key == 'd') //detects Move Right key (must be lowercase)
-      {
-        moveRight() //call function moveRight (literally just name it that)
-      }
-      function moveRight() 
-      {
-        x1+= basket_speed; //allows us to move Right
-        basket.src = "Images/basket.jpeg";
-        Draw () //call draw function to update the canvas
-      }
-    }
-
-    function detectLeft(event)
-    {
-      if (event.key == 'a') //deteces Move Left key
-      {
-        moveLeft()
-      }
-      function moveLeft() 
-      {
-        x1-= basket_speed; //allows us to move Left (-1 to move opposite direction)
-        basket.src = "Images/basket.jpeg";
-        Draw () //call draw function again
-      }
-    }
-  </script>
 </body>
 
 </html>
