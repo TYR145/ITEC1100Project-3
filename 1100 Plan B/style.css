@@ -122,6 +122,22 @@ button:hover {
   transform: scale(1.06);
 }
 
+#replay-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none; /* hides until game over */
+}
+
+#replay-btn:hover {
+  background: #ff4747;
+}
+
+
 
 .FooterCopyright {
   margin-top: 1.5rem;
