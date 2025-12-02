@@ -91,7 +91,13 @@ button {
 #reset-button{
   display: flex;
   text-align: center;  
-  margin-inline: 750px;
+  margin-inline: 1100px;
+}
+
+.home-button{
+  display: flex;
+  text-align: center;
+  margin-inline: 400px;
 }
 
 button:hover {
