@@ -140,25 +140,4 @@ setInterval(PeexleHunt, 100);
     }
   }
 
-function ReplayGame() {
-    // Reset player
-    player_x = 200;
-    player_y = 300;
-    player_dead = false;
-
-    // Reset enemy
-    enemy_x = 200;
-    enemy_y = 200;
-    enemy_dead = false;
-    enemy_speed_x = 4;
-    enemy_speed_y = 4;
-
-    // Hide the replay button
-    document.getElementById("replay-btn").style.display = "none";
-
-    // Restart loop
-    clearInterval(gameInterval);
-    gameInterval = setInterval(MainLoop, 50);
-
-    Draw();
-}
+  
