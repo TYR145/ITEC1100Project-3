@@ -118,6 +118,7 @@ function BearHunt() {
     enemy_x -= 3; // move left
   }
 
+<<<<<<< HEAD
   if (enemy_y < player_y) {
     enemy_y += 3; // move down
   }
@@ -125,3 +126,14 @@ function BearHunt() {
     enemy_y -= 3; // move up
   }
 }
+=======
+     if(Pex.position.y< Player1.position.y){
+      Pex.position.y +=3;
+    }
+    if(Pex.position.y> Player1.position.y){
+      Pex.position.y -=3;
+    }
+  }
+
+  
+>>>>>>> 52e97d26cab0063601527fc4afd3e2927eb8f59f
