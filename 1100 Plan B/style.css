@@ -50,36 +50,6 @@ ul {
 }
 
 
-/*Decorative Apples */
-
-.apple-decor1,
-.apple-decor2 {
-  position: absolute;
-  width: 200px;
-  opacity: 0.9;
-  pointer-events: none;
-}
-
-.apple-decor1 {
-  top: 335px;
-  left: 10px;
-}
-
-.apple-decor2 {
-  top: 335px;
-  right: 10px;
-  transform: scaleX(-1);
-}
-
-
-/*POINTS*/
-#Points,
-#Points ul {
-  margin-top: 0.5rem;
-  color: rgb(216, 97, 42);
-  margin-bottom: 0rem;
-}
-
 /*RULES*/
 .Rules-Controls {
   display: flex;
@@ -118,11 +88,19 @@ button {
   transition: transform 0.2s ease;
 }
 
+#reset-button{
+  display: flex;
+  text-align: center;  
+  margin-inline: 750px;
+}
+
 button:hover {
   transform: scale(1.06);
 }
 
-
+body {
+    text-align: center; /* Centers inline elements like <button> */
+}
 
 
 .FooterCopyright {
