@@ -15,7 +15,7 @@ var player_speed = 4; //setting speed of player movement
 var player_dead = false;
 
 /*setting enemy variables*/
-var enemy_x = 830;
+var enemy_x = 850;
 var enemy_y = 240;
 var enemy_speed = 4.5; //setting overall speed of enemy ??
 var enemy_dead = false;
