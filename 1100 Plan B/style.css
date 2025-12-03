@@ -10,28 +10,12 @@ body {
 
 
 /*INTRO PAGE FLEX BOX*/
-
-.title-section {
-  display: flex;
-  justify-content: center;
-  color: rgb(232, 135, 0);
-}
-
 body {
   background-color: #fff7da;
   color: #654321;
-  margin: 0;
-  padding: 0;
+  margin: 0, auto;
   text-align: center;
   background-color: lightyellow;
-}
-
-.hero {
-  display: fixed;
-  flex-direction: column;
-  align-items: center;
-  gap: 0rem;
-  padding-bottom: 1rem;
 }
 
 ul {
@@ -42,15 +26,19 @@ ul {
 }
 
 .title {
-  font-family: Century;
+  font-family: Calibri;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
   color: rgb(232, 135, 0);
-  margin-inline-start: 30rem;
+  margin-bottom: 0.25rem, auto;
 }
 
 
 /*RULES*/
+#Description {
+  font-size: 25px;
+}
+
 .Rules-Controls {
   display: flex;
   flex-direction: column;
@@ -61,12 +49,32 @@ ul {
   border: 3px solid orange;
   margin-top: 0rem;
   margin-inline: 2rem;
+  max-width: 60%;   /* shrink to 80% of parent */
+  margin: 0 auto;   /* center it horizontally */
 }
 
+.Rules-Controls h2 {
+  font-size: x-large;
+  text-decoration: underline;
+  margin-bottom: 0rem;
+}
+.Rules-Controls p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 18px;
+}
+#Controls {
+  margin-top: 2rem;
+}
+#Rules-note p {
+  margin-top: 0.25rem;
+}
 
 .VideoDemo h2 
 {
-  font-size: larger;
+  font-size: 36px;
+  font-family: 'Calibri';
+  font-weight: 800;
   margin-top: 4rem;
   color: rgb(217, 40, 40);
   /*TEMPORARY COLOUR*/
@@ -74,6 +82,21 @@ ul {
   color: rgb(217, 40, 40);
   /*temp color*/
 }
+
+/*
+/*GAME.HTML CSS */
+/*
+
+/*title CSS*/
+#canvas-title {
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-bottom: 0%;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
 
 
 
@@ -84,29 +107,22 @@ button {
   border: none;
   border-radius: 8px;
   color: rgb(232, 135, 0);
-  font-size: 16px;
+  font-size: 26px;
   transition: transform 0.2s ease;
 }
 
-#reset-button{
+.UI-buttons {
   display: flex;
-  text-align: center;  
-  margin-inline: 1100px;
-}
-
-.home-button{
-  display: flex;
-  text-align: center;
-  margin-inline: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 17.5rem;
+  margin-bottom: 2rem;
 }
 
 button:hover {
   transform: scale(1.06);
 }
 
-body {
-    text-align: center; /* Centers inline elements like <button> */
-}
 
 
 .FooterCopyright {

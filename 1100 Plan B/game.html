@@ -5,27 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="JavaScript.js"></script>
 </head>
 
-<body onload="Innit()"> <!--Immediately tells the canvas images to load-->
-    <p>Bearly Alive</p>
-    <canvas id="my-canvas" width="800px" height = 500px">
+<body> <!--Immediately tells the canvas images to load-->
+    <h2 id="canvas-title">Bearly Alive</h2>
+    <canvas id="my-canvas" width="800" height="500">
         <!--NOTE: Used CSS to set border and background colour-->
-        Your browser does not support this HTML canvas tag"
+        Your browser does not support this HTML canvas tag
     </canvas>
 
 
-<!--RESET BUTTON HERE-->
-<div class="reset-button">
-    <button id="reset-button" onclick="reset()">Reset Game</button>
-</div>
-<!--Home Button-->
-<div class="home-button">
-    <button onclick="window.location.href='index.html'">Return Home</button>
-    </section>
-</div>
+    <!--RESET BUTTON HERE-->
+    <div class="UI-buttons">
+        <button id="home-button" onclick="window.location.href='index.html'">Return Home</button>
+        <button id="reset-button" onclick="reset()">Reset Game</button>
+    </div>
 </body>
 
 </html>

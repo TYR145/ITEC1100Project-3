@@ -4,27 +4,26 @@
 var canvas;
 var ctx;
 var bg_img;
-var player;
+var player_img;      //NOTE: Added these bc JS validator caught these as undefined
+var playerDead_img;  //
+var enemy_img;       //
+
 /*setting player variables*/
-var player_x = 300;
-var player_y = 300;
-var player_speed = 4; //setting speed of player movement
+var player_x = 100;
+var player_y = 230;
+var player_speed = 5; //setting speed of player movement
 var player_dead = false;
 
 /*setting enemy variables*/
-var enemy;
-var enemy_x = 900;
-var enemy_y = 300;
-var enemy_speed = 10; //setting overall speed of enemy ??
-var enemy_speed_x = 2;
-var enemy_speed_y = 4;
+var enemy_x = 830;
+var enemy_y = 240;
+var enemy_speed = 5; //setting overall speed of enemy ??
 var enemy_dead = false;
 
-
-let frame = 0;
 //
 //Drawing canvas
 //
+window.onload = Innit; //defining the function Innit (helps silence JS validators... --> defined in HTML though)
 function Innit() {
     // drawing the canvas
     canvas = document.getElementById("my-canvas");
@@ -50,7 +49,7 @@ function Innit() {
     enemy_img = new Image();
     enemy_img.src = "images/Down-bear.png"; // make sure path is correct
     enemy_img.onload = function () {
-        ctx.drawImage(enemy_img, enemy_x, enemy_y, 75, 100);
+        ctx.drawImage(enemy_img, enemy_x, enemy_y, 95, 100);
     };
 
     //set main loop and frame rate
@@ -63,8 +62,11 @@ function Innit() {
 //
 function MainLoop() {
     Update();
-    Draw()
+    Draw();
 }
+//
+//Draw function
+//
 function Draw() {
     // Always draw the background first
     ctx.drawImage(bg_img, 0, 0, canvas.width, canvas.height);
@@ -72,57 +74,37 @@ function Draw() {
 
     //Draw player only if alive
     if (!player_dead) { //use != to check the value
-        ctx.drawImage(player_img, player_x, player_y, 100, 70);
+        ctx.drawImage(player_img, player_x, player_y, 100, 75);
     }
     else {
         //Background for "Game Over"
         ctx.fillStyle = "black";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+        //Game Over text
         ctx.fillStyle = "white";
-        ctx.font = "65px Arial";
-        ctx.fillText("GAME OVER!", 100, 100);
+        ctx.font = "65px Calibri";
+        ctx.fillText("GAME OVER!", 250, 170,);
+        //Additional (smaller) text
+        ctx.fillStyle = "white";
+        ctx.font = "50px Calibri";
+        ctx.fillText("The bear ate you!", 255, 250,);
 
-        ctx.drawImage(playerDead_img, player_x, player_y, 100, 70)
+        //Drawing the dead player sprite
+        ctx.drawImage(playerDead_img, player_x, player_y, 100, 70);
+
     }
-    if (!enemy_dead) {
-        ctx.drawImage(enemy_img, enemy_x, enemy_y, 75, 100);
-    }
-}
-function Update() {
+    // Draw bear only if player is alive (!player_dead) AND bear is alive (!enemy_dead).
     if (!player_dead && !enemy_dead) {
-        BearHunt();
+        ctx.drawImage(enemy_img, enemy_x, enemy_y, 125, 160);
     }
 
-    //detect collision
-    //we can do this only if enemy_dead is false
-    var distance2 = (player_x - enemy_x) * (player_x - enemy_x) + (player_y - enemy_y) * (player_y - enemy_y);
-    var distance = Math.sqrt(distance2);
-    if (distance < 80) {
-        ; //"GAME OVER IMAGE"???
-        player_dead = true;
+    if (!enemy_dead && !player_dead) { //&& hides enemy image when player is dead
+        ctx.drawImage(enemy_img, enemy_x, enemy_y, 125, 160);
     }
 }
 
-//moving player
-function KeyDown(event) {
-    if (player_dead) return; //stops moving when die
-
-    if (event.key == 'w') {
-        player_y -= player_speed; //-= because we're going up, so "y" lowered
-    }
-    if (event.key == 'a') {
-        player_x -= player_speed;
-    }
-    if (event.key == "d") {
-        player_x += player_speed;
-    }
-    if (event.key == "s") {
-        player_y += player_speed;
-    }
-    Draw();
-}
-
+//BearHunt function defining
 function BearHunt() {
     if (enemy_x < player_x) {
         enemy_x += 3; // move right
@@ -138,15 +120,52 @@ function BearHunt() {
         enemy_y -= 3; // move up
     }
 }
+
+function Update() {
+    if (!player_dead && !enemy_dead) {
+        BearHunt();
+    }
+
+    //detect collision
+    //we can do this only if enemy_dead is false
+    var distance2 = (player_x - enemy_x) * (player_x - enemy_x) + (player_y - enemy_y) * (player_y - enemy_y);
+    var distance = Math.sqrt(distance2);
+    if (distance < 30) {
+        //"GAME OVER IMAGE"???
+        player_dead = true;
+    }
+}
+
+
+//moving player
+function KeyDown(event) {
+    if (player_dead) return; //stops moving when die
+
+    if (event.key === 'w') {
+        player_y -= player_speed; //-= because we're going up, so "y" lowered
+    }
+    if (event.key === 'a') {
+        player_x -= player_speed;
+    }
+    if (event.key === "d") {
+        player_x += player_speed;
+    }
+    if (event.key === "s") {
+        player_y += player_speed;
+    }
+    Draw();
+}
+
+
 //RESET BUTTON
 function reset() {
-    player_x = 300;
-    player_y = 300;
+    player_x = 100;
+    player_y = 230;
     player_dead = false;
 
     // Reset enemy
-    enemy_x = 900;
-    enemy_y = 300;
+    enemy_x = 830;
+    enemy_y = 240;
     enemy_dead = false;
 
     // Redraw everything
