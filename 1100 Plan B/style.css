@@ -1,5 +1,7 @@
 #my-canvas {
+  margin-top: 0.25rem;
   border: 3px solid rgb(183, 38, 38);
+  text-align: center;
 }
 
 html,
@@ -27,9 +29,11 @@ ul {
 .title {
   font-family: Calibri;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 65px;
   color: rgb(232, 135, 0);
-  margin-bottom: 0.25rem, auto;
+  margin: 0rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 
@@ -103,14 +107,16 @@ ul {
   text-align: center;
   font-size: 45px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding-bottom: 0%;
+  padding-bottom: 0rem;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
 }
 
 .game-section {
-  width: 800px;  /*Makes the buttons same width as canvas*/
+  width: 800px;
+  /*Makes the buttons same width as canvas*/
   margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -135,21 +141,31 @@ button {
 }
 
 /*Game HTML Instructions Copy*/
+#Controls2 {
+  width: auto;
+}
 #Controls2 h2 {
   font-size: 30px;
   text-decoration: underline;
   margin-bottom: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
 }
+
 #Controls2 p {
   font-size: 25px;
 }
 
+.Instructions-Controls {
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+}
+
 .Instructions-Controls p {
   margin-top: 0.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   font-size: 18px;
 }
+
 
 
 
@@ -166,7 +182,6 @@ button:hover {
 
 .Credits {
   margin: 0.5rem auto;
-  /* vertical spacing + horizontal centering */
   border-radius: 40px;
   background-color: rgb(255, 244, 188);
   max-width: 40%;
@@ -194,7 +209,7 @@ button:hover {
 }
 
 .Credits li {
-  padding-left: 3rem;
+  padding-left: 4rem;
 }
 
 /*Footer and Below*/
