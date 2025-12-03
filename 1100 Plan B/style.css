@@ -69,6 +69,9 @@ ul {
 #Controls {
   margin-top: 2rem;
 }
+#Controls ul {
+  text-align: left auto;
+}
 #Instru-note p {
   margin-top: 0.25rem;
 }
