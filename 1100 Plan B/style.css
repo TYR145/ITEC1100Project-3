@@ -82,8 +82,10 @@ ul {
   text-align: left auto;
 }
 
-#Instru-note p {
+#Instr-note {
   margin-top: 0.25rem;
+  color: orange;
+  font-weight: 500;
 }
 
 .VideoDemo h2 {
@@ -144,6 +146,7 @@ button {
 #Controls2 {
   width: auto;
 }
+
 #Controls2 h2 {
   font-size: 30px;
   text-decoration: underline;
@@ -209,7 +212,7 @@ button:hover {
 }
 
 .Credits li {
-  padding-left: 4rem;
+  padding-left: 3rem;
 }
 
 /*Footer and Below*/
