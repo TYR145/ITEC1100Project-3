@@ -88,21 +88,29 @@ ul {
   font-weight: 500;
 }
 
-.VideoDemo h2 {
-  font-size: 36px;
-  font-family: 'Calibri';
-  font-weight: 800;
-  margin-top: 0rem;
-  color: rgb(217, 40, 40);
-  /*TEMPORARY COLOUR*/
-  text-decoration: underline;
-  color: rgb(217, 40, 40);
-  /*temp color*/
+.VidPicDemo {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
 }
-#demo-pic {
-  padding-block: 5rem;
+
+.VidPicDemo h2 {
   margin-top: 3rem;
   margin-bottom: 0rem;
+  text-decoration: underline;
+  color: rgb(216, 60, 60);
+
+}
+
+#demo-vid {
+  display: block;
+  margin: 0 auto;     
+  margin-top: 0rem; 
+  margin-bottom: 1rem;
+}
+
+#demo-pic {
+  margin-top: 1rem;    
+  padding-block: 0rem;
 }
 
 /*
@@ -148,6 +156,7 @@ button {
   color: rgb(232, 135, 0);
   font-size: 26px;
   transition: transform 0.2s ease;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
