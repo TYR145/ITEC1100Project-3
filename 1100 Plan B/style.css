@@ -92,7 +92,7 @@ ul {
   font-size: 36px;
   font-family: 'Calibri';
   font-weight: 800;
-  margin-top: 4rem;
+  margin-top: 0rem;
   color: rgb(217, 40, 40);
   /*TEMPORARY COLOUR*/
   text-decoration: underline;
@@ -101,6 +101,8 @@ ul {
 }
 #demo-pic {
   padding-block: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
 }
 
 /*
