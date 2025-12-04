@@ -57,9 +57,7 @@ ul {
   margin-top: 0rem;
   margin-inline: 2rem;
   max-width: 60%;
-  /* shrink to 80% of parent */
   margin: 0 auto;
-  /* center it horizontally */
 }
 
 .Instructions-Controls h2 {
@@ -114,8 +112,8 @@ ul {
 }
 
 /*
-/*GAME.HTML CSS */
-/*
+GAME.HTML CSS
+*/
 
 
 /*TIMER*/
