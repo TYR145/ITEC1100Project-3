@@ -141,6 +141,7 @@ GAME.HTML CSS
   width: 800px;
   /*Makes the buttons same width as canvas*/
   margin: 0 auto;
+  margin-top: 0rem;
   text-align: center;
 }
 
