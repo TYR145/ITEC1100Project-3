@@ -23,7 +23,7 @@ var enemy_dead = false;
 // Bear speeds up over time
 setInterval(function () {
     enemy_speed += 0.25;
-}, 2000);
+}, 2000); //2000 milliseconds = 2 seconds 
 
 //
 // Drawing canvas
